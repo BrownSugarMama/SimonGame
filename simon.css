@@ -80,7 +80,10 @@ h1 {
     background-color: #73feff;
 }
 
-
+.counter {
+    display: flex;
+    justify-content: center;
+}
 
 .controls{
     display: flex;
