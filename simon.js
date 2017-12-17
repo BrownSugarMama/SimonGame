@@ -18,7 +18,7 @@ var x;
 //Timer for how long light is lit to show user. Light will spped up after round 10
 function change1() {
     
-    if (count <= 10) {
+    if (count <= 5) {
         off = 400;
         on = 800;
     }
@@ -80,7 +80,7 @@ function change1() {
 function checking() {
     if (liteID.length == clicked.length) {
     if (liteID.join() == clicked.join()) {
-    if (count == 20) {
+    if (count == 10) {
 
         setTimeout(function () {
             alert("You win!");
@@ -118,7 +118,7 @@ function checking() {
 //To turn the game on
 $('#on').on('click', function () {
 $('#count').text('--');
-for (i = 0; i < 20; i++) {
+for (i = 0; i < 10; i++) {
     random[i] = Math.ceil((Math.random() * 4));
     }
 
