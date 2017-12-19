@@ -88,7 +88,7 @@ function checking() {
         }, 1000);
     }
 
-// user wins at round 20
+// user wins at round 10
      else {
         setTimeout(function () {
         $('#count').text(count + 1);
