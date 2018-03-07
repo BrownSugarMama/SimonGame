@@ -119,7 +119,7 @@ function checking() {
 
 //To turn the game on
 $('#on').on('click', function () {
-$('#count').text('--');
+$('#count').text('    --');
 for (i = 0; i < 10; i++) {
     random[i] = Math.ceil((Math.random() * 4));
     }
