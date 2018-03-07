@@ -2,6 +2,8 @@
 $(document).ready(function () {
     console.log('hello world')
 
+alert("Welcome to the Simon Game. To play, the rules are simple.  -- Press the 'on' button of the 'SimonBoy' console. -- Select 'start' for a normal game or 'strict' for a 'no mistakes allowed' game. -- The goal is to correctly mimick the pattern displayed throughout the game. -- Each round adds one additional color. -- You must repeat the entire pattern each round. Can you make it through all 10 rounds? Give it a shot!");
+
 // Declaration of the varibles for my arrays
 var random = [];
 var liteID = [];
@@ -15,20 +17,19 @@ var off;
 var strict;
 var x;
 
-//Timer for how long light is lit to show user. Light will spped up after round 10
+//Timer for how long light is lit to show user. Light will speed up after round 5
 function change1() {
-    
     if (count <= 5) {
         off = 400;
         on = 800;
     }
-    
     else {
         off = 250;
         on = 500;
     }
     
     //Setting X as the interval function for both the regular and strict modes. Regular = interval  Strict = Timeout
+
     x = setInterval(function () {
     //Square 1 - Green (#one - .light1 - .dark1)
     if (random[j] == 1) {
@@ -38,8 +39,9 @@ function change1() {
         liteID.push(1);
     
     setTimeout(function () {
-        $('#one').removeClass(lite);}, off);
-    }
+        $('#one').removeClass(lite);}, off); 
+        }
+        
     //Square 2 - Red (#two - .light2 - .dark2)
         else if (random[j] == 2) {
             lite = 'light2';
@@ -182,5 +184,5 @@ setTimeout(function () {
 $('#off').on('click', function () {
     location.reload();});
 
-})//End of jquery statement
+})
 

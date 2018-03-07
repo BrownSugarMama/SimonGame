@@ -1,54 +1,96 @@
-body{
-    background-color:lightgray;
+@font-face {
+  font-family: "Retro";
+  src: url(fonts/PacFont.ttf) format("truetype");
 }
 
+body{
+    background-color: #f0f0f0;
+    background-image: url(images/gb4.png);
+    background-repeat: no-repeat;
+    background-size: 1475px 700px;
+    background-position: 0px 35px; 
+}
+
+
 #content {
-    color: #000002;
+    color: #43de7e;
     font-size: 40px;
     text-align: center;
-    background-color: lightgray;
 }
 
 h1 {
-    color: #000002;
-    font-size: 40px;
-    background-color: lightgray;
+    color: #f0f0f0;
+    font-size: 50px;
+    font-family: "Retro", sans-serif;
+}
+.text-primary{
+    position: relative;
+    top: 250px;
+    left: 30px;
 }
 
+#squares{
+    position: relative;
+    top: 120px;
+    left: 20px;
+}
+.counter{
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+.controls{
+    position: relative;
+    top: 160px;
+    left: 50px;
+}
+/* img {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    align-content: center;
+} */
+
+/* Green */
 #one {
+    border-radius: 25px;
     height: 200px;
-    width: 200px;
+    width: 175px;
     text-align: center;
     align-content: center;
 
 }
-
+/* Red */
 #two {
+    border-radius: 25px;
     height: 200px;
-    width: 200px;
+    width: 175px;
     text-align: center;
     align-content: center;
 
 }
-
+/* Yellow */
 #three {
+    border-radius: 25px;
     height: 200px;
-    width: 200px;
+    width: 175px;
     text-align: center;
     align-content: center;
 
 }
-
+/* Blue */
 #four {
+    border-radius: 25px;
     height: 200px;
-    width: 200px;
+    width: 175px;
     text-align: center;
     align-content: center;
 
 }
 
 .dark1 {
-    background-color: #10b958;
+    /* background-color: #10b958; */
+     background-color: #43de7e;
 }
 
 .light1 {
@@ -56,16 +98,20 @@ h1 {
 }
 
 .dark2 {
-    background-color: #c61611;
+    /* background-color: #c61611; */
+     background-color: #eb3b6f;
 }
 
 .light2 {
-    background-color: #ff1c15;
+    /* background-color: #ff1c15; */
+    background-color: #db2c5e;
+
 }
 
 
 .dark3 {
-    background-color: #dddf1a;
+    /* background-color: #dddf1a; */
+    background-color: #f2e463;
 }
 
 .light3 {
@@ -73,7 +119,8 @@ h1 {
 }
 
 .dark4 {
-    background-color: #5ac5c6;
+    /* background-color: #5ac5c6; */
+     background-color: #25c1cc;
 }
 
 .light4 {
@@ -98,13 +145,6 @@ h1 {
     background-color: white;
 }
 
-/* .img {
-    height: 12px;
-    width: 12px;
-    text-align: center;
-    align-content: center;
-
-} */
 
 #footer{
     margin:auto;
